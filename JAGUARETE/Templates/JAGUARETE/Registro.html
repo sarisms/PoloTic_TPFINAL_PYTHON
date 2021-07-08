@@ -1,0 +1,45 @@
+{% extends "jaguarete/layout.html" %}
+
+{% block body %}
+
+{% load static %}
+
+
+		<div id="cajaForm">
+		<section class="section_item flex-container color-2">
+			<h2>
+				Formulario de registro
+			</h2>
+			
+			<form action="show_data.html" target="_blank" method="get"  >
+				<label for="Usuario">
+					Usuario: 
+				</label>
+				<input type="text" name="Usuario"  placeholder="Ingrese nombre de usuario..." size="59" >
+				<br>
+				<br>
+				<label for="Correo">
+					Email: 
+				</label>
+				<input type="text" name="Correo" placeholder="Ingrese su correo electronico..." size="59">
+				<br>
+				<br>
+				<label for="Password">
+					Password: 
+				</label>
+				<input type="text" name="Password" placeholder="Ingrese su Password..." size="58">
+				<br>
+				<br>
+				<label for="rPassword" size="60">
+					Repetir Password: 
+				</label>
+				<input type="text" name="rPassword" placeholder="Repetir su Password..." size="58">
+
+
+				<input type="submit" value="Enviar">
+			</form>
+
+		</div>
+
+       
+{% endblock %}

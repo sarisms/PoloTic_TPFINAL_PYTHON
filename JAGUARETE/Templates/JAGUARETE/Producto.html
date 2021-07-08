@@ -1,0 +1,17 @@
+{% extends 'JAGUARETE/Layout.html' %}
+
+{% block body %}
+
+{% load static %}
+
+
+<h1>Producto:</h1>
+<ul>
+{% for una_Prod in productos %}
+<li>{{ una_Prod }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'JAGUARETE:AgreProd' %}"> Agregar Producto </a>
+        
+{% endblock %}

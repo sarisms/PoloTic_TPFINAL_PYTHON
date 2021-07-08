@@ -1,0 +1,129 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+	
+	<head>
+        <script 
+            src="https://kit.fontawesome.com/ec8e8f40e7.js" crossorigin="anonymous">
+        </script>
+
+    	<meta charset="UTF-8>
+		<meta name="viewport"
+			content="width-device-width, initial-scale=1.0">
+		<title>
+			JAGUARETE kAA S.A.
+		</title>
+
+        <link rel="stylesheet" href = "{%static 'Jaguarete_Styles/Jaguarete.css'%}">
+    <section class="section_item flex-container color-2">
+	</head>
+	
+	<body>
+	<section class="section_item flex-container color-2">
+        <header >
+            
+            <img id = "logo" src="{% static 'Imagenes/logos50.jpg' %}" >
+            
+
+			<h1>
+				JAGUARETE kAA S.A.
+			</h1>
+            <div class="containerLogin">
+              <button onclick="location.href= '../JAGUARETE/Login' ">Login</button>
+            </div>	
+
+            <div class="containerRegistro">
+                <button onclick="location.href= '../JAGUARETE/Registro' ">Registrate</button>
+            </div>	
+
+            <div class="containerCarrito">
+               <button onclick="location.href= '../JAGUARETE/Carrito' ">Carrito</button>
+            </div>	            
+
+		</header>
+</section>
+<!-- start nav -->
+<nav id="menu">
+<!-- start menu -->
+<ul>
+<li><a href="{% url 'JAGUARETE:Home' %}"> Home </a>
+</li>
+<li><a href="#">Categoria</a>
+<!-- start menu desplegable -->
+<ul>
+<li><a href="#">Categoria 2.1</a></li>
+<li><a href="#">Categoria 2.2</a></li>
+<li><a href="#">Categoria 2.3</a></li>
+</ul>
+<!-- end menu desplegable -->
+</li>
+<li><a href="{% url 'JAGUARETE:Acercade' %}"> Acerca De </a>
+</li>
+<li><a href="{% url 'JAGUARETE:Contacto' %}"> Contacto </a>
+</li>
+<li><a href="{% url 'JAGUARETE:AgreProd' %}"> Nuevo Producto</a>
+</li>
+
+<li>
+<form action="/action_page.php">
+  <label for="gsearch">Search Produc:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit">
+</form>
+
+
+</body>
+
+</html>
+
+
+</li>
+</ul>
+<!-- end menu -->
+</nav>
+<!-- end nav -->
+
+<br>
+<br>
+<br>
+
+
+
+
+{% block body %}
+<aside class="section_item flex-container color-2">
+
+{% endblock %}
+        
+        
+     </body>
+<footer>
+<a href="http://www.twitter.com" target = "_blank">
+<i class="fab fa-twitter" aria-hidden="true">
+</i>
+</a>
+<a href="http://www.facebook.com" target = "_blank">
+<i class="fab fa-facebook-f" aria-hidden="true">
+</i>
+</a>
+<a href="http://www.pinteres.com" target = "_blank">
+<i class="fab fa-pinterest" aria-hidden="true">
+</i>
+</a>
+<a href="http://www.instagram.com" target = "_blank">
+<i class="fab fa-instagram-square" aria-hidden="true">
+</i>
+</a>
+<a href="http://www.linkedin.com" target = "_blank">
+<i class="fab fa-linkedin" aria-hidden="true">
+</i>
+</a>
+<br>
+<p>
+Derechos reservados @2020
+</p>
+<br>
+</footer>
+</html>
